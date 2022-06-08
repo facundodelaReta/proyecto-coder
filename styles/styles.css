@@ -40,6 +40,9 @@ font-family: 'Roboto Condensed', sans-serif;
 
     }
 /* main */
+.row{
+    margin-top:10px ;
+}
 h3{
     color: #fff;
     margin-bottom: 100px;
@@ -108,8 +111,9 @@ section.musica .discos{
 }
 section.musica .discos .disco a{
     text-decoration: none;
-    font-size: 20px;
+    font-size: 15px;
     color: white;
+    
     
 }
 section.musica .discos .disco img{
@@ -129,6 +133,11 @@ section.videos .padre-videos{
         margin-right: auto;
         justify-items: center;
     }
+
+footer {
+    background: linear-gradient(180deg, #b24a4a 0%, #5a0000 100%)
+
+}
        
 /* responive */
 @media screen and (max-width:768px){
