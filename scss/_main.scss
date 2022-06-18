@@ -1,0 +1,106 @@
+main{
+    .row{
+        margin-top:10px ;
+    }
+    h3{
+        color: #fff;
+        margin-bottom: 100px;
+    }
+    section.uno{
+        .contenedor{
+        display: grid;
+        grid-template-areas: "texto imagen";
+    
+    }
+     .contenedor-dos{
+        display: grid;
+        grid-template-areas: "imagen texto";
+    
+    }
+    .texto{
+        color: #fff;
+        font-size: 50px;
+        font-family:'Roboto', sans-serif;
+        grid-area: texto;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .imagen{
+        grid-area: imagen;
+        padding-right: 50px;
+    }
+    .contenedor-dos{
+        .imagen{
+        padding-left: 50px;
+    
+    }
+    .texto{
+        color: #fff;
+        font-size: 50px;
+        font-family:'Roboto', sans-serif;
+        grid-area: texto;
+        padding-left: 50px;
+        padding-right: 150px;
+    }
+    } 
+    .imagen img{
+        border-radius: 20px;
+        width: 75%;
+        height: auto;
+    }
+   
+    }
+     section.carrusel {
+        display: grid;
+        justify-content: center;
+        .carousel{
+            max-width: 500px;
+             height: auto;
+           
+             img{
+                max-width: 100%;
+            
+            }
+        }
+    }
+    section.musica{
+        .discos{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+       text-align: center;
+       .disco{
+         a{
+        text-decoration: none;
+        font-size: 15px;
+        color: white;
+        
+       }
+       img{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        
+          
+      }
+        
+    }
+    }
+
+}
+section.videos{
+    .padre-videos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        justify-items: center;
+    }
+} 
+
+}

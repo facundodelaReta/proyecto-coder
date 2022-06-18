@@ -1,0 +1,21 @@
+header{
+    #mivideo {
+        display: grid;
+        justify-content: center;
+        margin-bottom: 100px;
+        top: -10px;
+        width: 100%;
+        z-index: 100;
+        background: white;
+        border: white solid 2px; }
+        h1{
+            font-size: 50px;
+            font-family:'Roboto', sans-serif;
+            color: #fff;
+            text-align: center;
+            font-weight: 700;
+            padding-top: 50px;
+            padding-bottom: 50px;
+    
+        }
+}
