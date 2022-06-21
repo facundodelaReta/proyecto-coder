@@ -5,11 +5,10 @@ header #mivideo {
   top: -10px;
   width: 100%;
   z-index: 100;
-  background: white;
-  border: white solid 2px; }
+  background: white; }
 
 header h1 {
-  font-size: 50px;
+  font-size: 30px;
   font-family: 'Roboto', sans-serif;
   color: #fff;
   text-align: center;
@@ -31,7 +30,7 @@ nav {
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 400; }
     nav ul li a.nav-link .dropdown-toggle {
-      color: #fff;
+      color: white;
       font-family: 'Roboto Condensed', sans-serif;
       font-weight: 400; }
 
@@ -52,7 +51,7 @@ main section.uno .contenedor-dos {
 
 main section.uno .texto {
   color: #fff;
-  font-size: 50px;
+  font-size: 20px;
   font-family: 'Roboto', sans-serif;
   grid-area: texto;
   padding-left: 50px;
@@ -67,7 +66,7 @@ main section.uno .contenedor-dos .imagen {
 
 main section.uno .contenedor-dos .texto {
   color: #fff;
-  font-size: 50px;
+  font-size: 20px;
   font-family: 'Roboto', sans-serif;
   grid-area: texto;
   padding-left: 50px;

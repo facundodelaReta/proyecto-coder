@@ -26,6 +26,7 @@ body {
   background-image: url(../multimedia/red1.jpg);
   background-size: cover;
   background-attachment: fixed;
+  @inc;
 }
 
 nav {

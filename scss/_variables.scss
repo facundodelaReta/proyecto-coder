@@ -1,1 +1,13 @@
-$colornav:linear-gradient(180deg, #b24a4a 0%, #5a0000 100%)
+$colornav:linear-gradient(180deg, #b24a4a 0%, #5a0000 100%);
+$breakpoints: (
+    sm : 576px,
+    md : 768px,
+    lg : 992px,
+    xl : 1200px,
+    xxl: 1400px
+);
+@mixin media-up($breakpoint) {
+    @media screen and (min-width: map-get($breakpoints, $breakpoint) ) {
+        @content;
+    }
+}
