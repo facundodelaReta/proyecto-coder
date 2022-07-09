@@ -2,7 +2,6 @@ header{
     #mivideo {
         display: grid;
         justify-content: center;
-        margin-bottom: 100px;
         top: -10px;
         width: 100%;
         z-index: 100;
@@ -10,7 +9,7 @@ header{
         h1{
             font-size: 30px;
             font-family:'Roboto', sans-serif;
-            color: #fff;
+            color: white;
             text-align: center;
             font-weight: 700;
             padding-top: 50px;

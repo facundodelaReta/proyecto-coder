@@ -4,18 +4,16 @@ header #mivideo {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 100px;
   top: -10px;
   width: 100%;
   z-index: 100;
   background: white;
-  border: white solid 2px;
 }
 
 header h1 {
-  font-size: 50px;
+  font-size: 30px;
   font-family: 'Roboto', sans-serif;
-  color: #fff;
+  color: white;
   text-align: center;
   font-weight: 700;
   padding-top: 50px;
@@ -26,7 +24,6 @@ body {
   background-image: url(../multimedia/red1.jpg);
   background-size: cover;
   background-attachment: fixed;
-  @inc;
 }
 
 nav {
@@ -45,7 +42,7 @@ nav ul li a.nav-link {
 }
 
 nav ul li a.nav-link .dropdown-toggle {
-  color: #fff;
+  color: white;
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 400;
 }
@@ -73,13 +70,11 @@ main section.uno .contenedor-dos {
 
 main section.uno .texto {
   color: #fff;
-  font-size: 50px;
+  font-size: 20px;
   font-family: 'Roboto', sans-serif;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: texto;
-  padding-left: 50px;
-  padding-right: 50px;
 }
 
 main section.uno .imagen {
@@ -95,13 +90,11 @@ main section.uno .contenedor-dos .imagen {
 
 main section.uno .contenedor-dos .texto {
   color: #fff;
-  font-size: 50px;
+  font-size: 20px;
   font-family: 'Roboto', sans-serif;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: texto;
-  padding-left: 50px;
-  padding-right: 150px;
 }
 
 main section.uno .imagen img {
@@ -165,6 +158,49 @@ main section.videos .padre-videos {
   margin-left: auto;
   margin-right: auto;
   justify-items: center;
+}
+
+@media (min-width: 768px) {
+  section.uno .contenedor {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "texto imagen";
+  }
+  section.uno .contenedor-dos {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "imagen texto";
+  }
+  section.uno .texto {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: texto;
+  }
+  section.uno .imagen {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: imagen;
+    padding-right: 50px;
+  }
+  section.uno .contenedor-dos .imagen {
+    padding-left: 50px;
+  }
+  section.uno .contenedor-dos .texto {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: texto;
+  }
+  section.uno .imagen img {
+    border-radius: 20px;
+    width: 0;
+    height: auto;
+  }
 }
 
 footer {

@@ -1,11 +1,104 @@
 $breakpoints: (
-    sm : 540px,
+    sm : 320px,
     md : 768px,
     lg : 1024px
 );
 
 @mixin media-up($breakpoint) {
-    @media screen and (min-width: map-get($breakpoints, $breakpoint) ) {
+    @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
         @content;
+    }
+}
+@include media-up(md){
+   
+}
+@media screen and (max-width:768px) {
+    header{
+        .container-fluid{
+        padding-left: 40px;
+        }
+        
+    }
+    main{
+        section.uno{
+            .contenedor{
+                .imagen{
+                    display: none;
+                }
+            }
+            .contenedor-dos{
+                .imagen{
+                    display: none;
+                }
+            }
+            .texto{
+                margin-left: 1em;
+                margin-right: 1em;
+                text-align: center;
+            }
+        }
+        section.musica{
+            .discos{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(7, 1fr);
+                grid-column-gap: 10px;
+                grid-row-gap: 0px;
+                text-align: center;
+                .disco{
+                    img{
+                        width: 75%!important;
+                    }
+                }
+            }
+        }
+        section.videos{
+            .padre-videos{
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: 1fr;
+                grid-column-gap: 0px;
+                grid-row-gap: 0px;
+                justify-content: center;
+                margin-left: auto;
+                margin-right: auto;
+                justify-items: center;
+            }
+        }
+    }
+    footer {
+        background-color: black;
+    
+        .texto-footer {
+            display: flex;
+            justify-content: center;
+        }
+    
+        p {
+            color: white;
+            font-size:10px;
+            padding-top: 6px;
+            
+        }
+    
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            margin-bottom: 0;
+            align-content: flex-start;
+        }
+    
+        img {
+            width: 40px;
+            padding: 4px;
+        }
+        .derechos-footer{
+            display: flex;
+            justify-content: space-around;
+        }
+       .copy{
+        color: gray;
+       }
     }
 }
