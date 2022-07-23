@@ -161,8 +161,10 @@ footer {
 
 @media screen and (max-width: 768px) {
   header .container-fluid {
-    padding-left: 50px;
-    padding-right: 50px; }
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-around; }
   main section.uno .contenedor .imagen {
     display: none; }
   main section.uno .contenedor-dos .imagen {
